@@ -165,9 +165,12 @@ async function fetchPlaceDetails(placeId) {
     });
 
     if (response.ok) {
-      const place = await response.json();
+      const data = await response.json();
+      console.log('Fetched place details:', data);
+      const place = data.place;
       renderPlaceDetails(place);
     } else {
+      console.error('Response not OK:', response.statusText);
       document.getElementById('place-details').innerHTML = '<p>Place not found.</p>';
     }
   } catch (error) {
