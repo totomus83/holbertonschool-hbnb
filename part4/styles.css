@@ -18,6 +18,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
+    display: flex;
     padding: 1rem;
 }
 
@@ -45,4 +46,23 @@ main {
     transform: scale(1.02);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     background-color: #f0f8ff;
+}
+
+.back-button {
+    margin-left: auto;
+    background-color: #808080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #ff8000;
+    color: black;
 }
